@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>view the pirates</title>
+  </head>
+  <body>
+    <h1>Pirates</h1>
+    <div class="pirate">
+      <h3>Name: <%= @pirate.name %></h3><br>
+      <h4>Weight: <%= @pirate.weight %></h4><br>
+      <h4>Height: <%=@pirate.height %></h4><br>
+    </div></br>
+
+    <h1>Ships</h1>
+    <% @ships.each do |ship| %>
+      <div class="ship">
+        <p>Name: <%= ship.name %></p><br>
+        <p>Type: <%= ship.type %></p><br>
+        <p>Booty: <%= ship.booty %></p><br>
+      </div><br>
+      <% end %>
+
+  </body>
+</html>

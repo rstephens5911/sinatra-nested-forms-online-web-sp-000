@@ -1,5 +1,5 @@
 class Ship
-  attr_reader :name, :type, :booty
+  attr_accessor :name, :type, :booty
 
   @@ships = []
 
@@ -15,7 +15,7 @@ class Ship
   end
 
   def self.clear
-    @@ships = []
+    @@ship = []
   end
 
 end
